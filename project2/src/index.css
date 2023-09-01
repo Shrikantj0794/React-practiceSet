@@ -1,0 +1,11 @@
+*{
+    margin: 0 20px;
+    padding: 0;
+}
+
+.style{
+    color: red;
+}
+.size{
+    padding: 20px 0 0 0;
+}
