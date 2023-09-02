@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css'
+//import component
+import Heading from './Heading.jsx';
 
 const fname = 'shrikant';
 const lname = 'jamale';
@@ -44,7 +46,8 @@ ReactDOM.render(
     <img src={image1} alt=''/>
     <img src={image2} alt=''/>
     <img src={image3} alt=''/>
-
+    
+    <Heading/>
     </>,
     document.getElementById("root")
 ) 
