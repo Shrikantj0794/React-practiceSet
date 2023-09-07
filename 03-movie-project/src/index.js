@@ -6,6 +6,7 @@ import './index.css'
 
 ReactDOM.render(
     <>
+    <h1 className='heading_style'> list of top 5 netflix movies</h1>
     <Card 
     Imgsrc={Mdata[0].Imgsrc}
     title={Mdata[0].title}
