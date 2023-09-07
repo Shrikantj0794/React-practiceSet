@@ -8,19 +8,22 @@ import './index.css'
 //array.map(function(currentValue, index, arr),thisvalue)
 //index, arr - optional
 
-ReactDOM.render(
-    <>
-    <h1 className='heading_style'> list of top 5 netflix movies</h1>
-
-    {Mdata.map(function(value){
-        return(
+//declaring function
+function Ncards (value){
+    return(
         <Card 
         Imgsrc={value.Imgsrc}
         title={value.title}
         Mlink={value.Mlink}
         />
         )
-    })}
+}
+
+ReactDOM.render(
+    <>
+    <h1 className='heading_style'> list of top 5 netflix movies</h1>
+
+    {Mdata.map(Ncards)}
 
     </>,
     document.getElementById('root')
