@@ -22,9 +22,7 @@ function Ncards (value){
 ReactDOM.render(
     <>
     <h1 className='heading_style'> list of top 5 netflix movies</h1>
-
     {Mdata.map(Ncards)}
-
     </>,
     document.getElementById('root')
 )
