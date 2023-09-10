@@ -2,6 +2,7 @@ import React from 'react';
 
 function Card(props){
     return(
+        //changes made by codewizard
     <div className="cards">
         <div className="card">
             <img src={props.Imgsrc} alt="MoviePic" className='card__img' />
