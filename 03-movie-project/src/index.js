@@ -12,6 +12,7 @@ import './index.css'
 function Ncards (value){
     return(
         <Card 
+        key={value.id}
         Imgsrc={value.Imgsrc}
         title={value.title}
         Mlink={value.Mlink}
