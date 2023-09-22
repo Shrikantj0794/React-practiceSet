@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: antiquewhite;
 }
 
 code {
@@ -26,6 +27,10 @@ code {
 }
 .slot_inner{
   text-align: center;
+}
+.slot_inner h1 {
+  padding: 0px;
+  margin: 0px;
 }
 
 .slotmachine {
