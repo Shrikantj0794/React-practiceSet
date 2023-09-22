@@ -7,9 +7,11 @@ const App =()=>{
     // toLocalTimeString only show time in hours min and sec
     stateCtime(new Date().toLocaleTimeString())
   }
+  setInterval(() => {
+    Time()
+  }, 1000);
   return <>
     <h1>{Ctime}</h1>
-    <button onClick={Time}>Get Time</button>
   </>
 }
 
