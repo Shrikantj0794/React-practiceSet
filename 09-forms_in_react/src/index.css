@@ -56,3 +56,8 @@ button
  text-transform: uppercase;
  cursor: pointer;
 }
+.headingname{
+  background: transparent;
+  color: bisque;
+}
+
