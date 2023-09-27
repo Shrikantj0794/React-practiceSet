@@ -2,10 +2,15 @@ import React, { useState } from "react";
 
 const App = ()=>{
   const [inputList, setinputList] = useState('');
+  const [items, setitems] = useState([])
 
   const itemEvent = (event)=>{
     setinputList(event.target.value);
   }
+  const listOfItem = ()=>{
+
+  }
+
 
   return <>
   <div className="main_div">
@@ -15,7 +20,7 @@ const App = ()=>{
       <br />
 
       <input type="text" placeholder="add item" onChange={itemEvent}/>
-      <button> + </button>
+      <button onClick={listOfItem}> + </button>
       <ol>
         <li>{inputList}</li>
       </ol>
