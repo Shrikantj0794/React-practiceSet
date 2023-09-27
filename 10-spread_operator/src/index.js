@@ -5,13 +5,21 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const arry1 = [1,2,3,4,5];
+const arry2 = [...arry1, 6,7,8,9,10]
+const name= ['Shrikant', 'Jamale']
+console.log(...arry1, ...arry2, ...name)
+
+
+
+
+
 root.render(
+  
   <React.StrictMode>
-    <App />
+    <App/>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
