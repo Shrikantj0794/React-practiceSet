@@ -25,6 +25,4 @@ const App = ()=>{
   </>
 }
 
-// three dots is called as spread operater
-
 export default App
