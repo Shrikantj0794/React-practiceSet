@@ -8,13 +8,9 @@ const App = ()=>{
   const itemEvent = (event)=>{
     setinputList(event.target.value);
   }
-
   // for showing input value by clicking button
   const listOfItem = ()=>{
-    setitems((oldItems)=>{
-      return [...oldItems, inputList]
-    });
-    setinputList('')
+
   }
 
 
