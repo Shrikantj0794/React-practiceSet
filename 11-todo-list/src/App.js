@@ -11,7 +11,10 @@ const App = ()=>{
 
   // for showing input value by clicking button
   const listOfItem = ()=>{
-
+    setitems((oldItems)=>{
+      return [...oldItems, inputList]
+    });
+    setinputList('')
   }
 
 
@@ -22,7 +25,7 @@ const App = ()=>{
       <h1>ToDo List</h1>
       <br />
 
-      <input type="text" placeholder="add item" onChange={itemEvent}/>
+      <input type="text" placeholder="add item" value={inputList} onChange={itemEvent}/>
       <button onClick={listOfItem}> + </button>
       <ol>
         {/* <li>{inputList}</li> */}
