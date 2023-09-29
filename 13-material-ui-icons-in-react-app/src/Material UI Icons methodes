@@ -1,0 +1,6 @@
+Installation:
+
+
+Install the package in your project directory with:
+1: npm install @mui/icons-material
+2: npm install @mui/material
