@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import MyAccordion from './accordion/MyAccordion'
+import Accordion from './components/accordion/Accordion';
 
 function App() {
   return (
     <>
-    <MyAccordion/>
-
+    <Accordion/>
+    
     </>
   )
 }
