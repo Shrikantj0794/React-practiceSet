@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -32,6 +33,10 @@ code {
   width: 500px;
   padding: 15px 10px 5px 10px;
   margin: 20px auto;
+  color: #ecf0f1;
+  box-shadow: 3px 5px 15px -5px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  position: relative;
 }
 .my_notes h1{
   color: #34495e;
@@ -67,7 +72,7 @@ textarea{
   margin: 10px 0;
 }
 
-.MuiButton-root{
+.MuiButton-root .plus-sign{
 width: 30px;
 height: 50px;
 position: absolute;
@@ -98,7 +103,7 @@ border-radius: 50% !important;
   box-shadow: 0 2px 5px;
   padding: 10px;
   width: 240px;
-  margin: 16px;
+  margin: 40px 40px;
  float: left;
 }
 .note h1{
@@ -110,6 +115,7 @@ border-radius: 50% !important;
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
+  padding-bottom: 10px;
 }
 .note .btn{
   position: relative;

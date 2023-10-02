@@ -1,11 +1,15 @@
 import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
+import Header from './Components/Header'
+import Footer from './Components/Footer'
+import CreateNote from './Components/CreateNote'
+import Note from './Components/Note'
 
 const App = () => {
   return (
     <>
       <Header/>
+      <CreateNote/>
+      <Note/>
       <Footer/>
     </>
   )
