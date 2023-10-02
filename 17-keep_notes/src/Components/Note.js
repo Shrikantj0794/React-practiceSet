@@ -1,13 +1,13 @@
 import React from 'react'
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 
-const Note = () => {
+const Note = (props) => {
   return (
     <>
       <div className="note">
-        <h1>Title</h1>
+        <h1>{props.title}</h1>
         <br />
-        <p>HI, I'm Shrikant</p>
+        <p>{props.content}</p>
         <button className='btn'>
             <DeleteForeverIcon className='deleteIcon'/>
         </button>
