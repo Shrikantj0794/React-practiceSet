@@ -45,7 +45,7 @@ code {
   color: grey;
 }
 .form{
-  min-height: 50px;
+  min-height: 60px;
   color: #ecf0f1;
   padding: 15px 10px 5px 10px;
   box-shadow: 3px 5px 15px -5px rgba(0,0,0,0.5);
@@ -71,32 +71,6 @@ textarea{
   font-size: 1rem;
   margin: 10px 0;
 }
-
-.MuiButton-root .plus-sign{
-width: 30px;
-height: 50px;
-position: absolute;
-bottom: -28px;
-left: 400px;
-cursor: pointer;
-background-color: #fff !important;
-border-radius: 50% !important;
-}
-.MuiButton-root .plus-sign{
-  font-size: 45px !important;
-  font-weight: 900;
-  color: #f4b000;
-  cursor: pointer;
-  z-index: 222;
-  background: transparent;
-}
-.MuiButton-root:hover{
-  background-color: #f4b400;
-}
-.MuiButton-root:hover .plus-sign{
-  color: #fff;
-  background: transparent;
-}
 .note{
   background: #fff;
   border-radius: 7px;
@@ -117,7 +91,7 @@ border-radius: 50% !important;
   word-wrap: break-word;
   padding-bottom: 10px;
 }
-.note .btn{
+.btn{
   position: relative;
   float: right;
   margin-right: 10px;
@@ -131,14 +105,24 @@ border-radius: 50% !important;
   border-radius: 50%;
 
 }
+.main_note .btn{
+  margin-bottom: 50px;
+}
 .deleteIcon{
   width: 0.7em;
   height: 0.7em;
 }
-.note .btn:hover{
+.plus-sign{
+  width: 0.7em;
+  height: 0.7em;
+}
+.btn:hover{
   background-color: #f5ba13;
 }
-.note .btn:hover .deleteIcon{
+.btn:hover .deleteIcon{
+  color: #fff;
+}
+.btn:hover .plus-sign{
   color: #fff;
 }
 footer{

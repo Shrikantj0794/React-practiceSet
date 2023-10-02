@@ -8,7 +8,7 @@ const Note = () => {
         <h1>Title</h1>
         <br />
         <p>HI, I'm Shrikant</p>
-        <button>
+        <button className='btn'>
             <DeleteForeverIcon className='deleteIcon'/>
         </button>
       </div>
