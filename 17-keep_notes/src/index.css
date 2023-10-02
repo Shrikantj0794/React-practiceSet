@@ -22,7 +22,7 @@ code {
   line-height: 100px;
   background-color: #f5ba13;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   padding-left: 50px;
   color: white;
@@ -138,5 +138,11 @@ border-radius: 50% !important;
 footer{
   width: 100%;
   position: absolute;
+  display: flex;
   bottom: 0;
+  justify-content: center;
+  background-color: #f4b000;
+  font-weight: 500;
+  font-size: large;
+  padding: 10px 0 ;
 }
