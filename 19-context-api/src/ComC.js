@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { FirstName, LastName } from './App'
-const comC = () => {
+
+const ComC = () => {
+  const FName = useContext(FirstName);
+  const LName = useContext(LastName);
   return (
     <>
-    {/* thired step */}
+    {/* thired step
       <FirstName.Consumer>{
         (fname)=>{
           return (
@@ -13,14 +16,19 @@ const comC = () => {
                   <h1>My Name is {fname} {lName}</h1>
                 )
               }
-              }</LastName.Consumer>
+            }</LastName.Consumer>
           )
-        }}
+        }
+      }
+      </FirstName.Consumer> */}
       
-      </FirstName.Consumer>
-      
+
+      {/* thired step */}
+     
+     <h1>My name is {FName} {LName}</h1>
+     
     </>
   )
 }
 
-export default comC
+export default ComC
