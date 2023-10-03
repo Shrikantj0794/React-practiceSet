@@ -1,15 +1,23 @@
 import React from 'react'
-import { LastName } from './App'
+import { FirstName, LastName } from './App'
 const comC = () => {
   return (
     <>
     {/* thired step */}
-      <LastName.Consumer>{
-        (lname)=>{
-          return <h1>hey, my name is Shrikant {lname}</h1>
+      <FirstName.Consumer>{
+        (fname)=>{
+          return (
+            <LastName.Consumer>{
+              (lName)=>{
+                return(
+                  <h1>My Name is {fname} {lName}</h1>
+                )
+              }
+              }</LastName.Consumer>
+          )
         }}
       
-      </LastName.Consumer>
+      </FirstName.Consumer>
       
     </>
   )

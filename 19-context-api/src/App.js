@@ -2,16 +2,19 @@ import React, { createContext } from 'react'
 import ComA from './ComA'
 
 
-const LastName = createContext(); //first step
+const FirstName = createContext(); //first step
+const LastName = createContext();
 const App = () => {
   return (
     <>
-    <LastName.Provider value={'jamale'}> {/*second step*/}
+    <FirstName.Provider value={'Shrikant'}> {/*second step*/}
+    <LastName.Provider value={'Jamale'}>
       <ComA/>
-    </LastName.Provider>
+      </LastName.Provider>
+    </FirstName.Provider>
     </>
   )
 }
 
 export default App
-export { LastName }
+export { FirstName, LastName }
