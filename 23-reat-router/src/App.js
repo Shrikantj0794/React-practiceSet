@@ -1,8 +1,9 @@
 // App.js
 import React from 'react';
 import './App.css';
-import Header from './Home';
-import Content from './Contact';
+import Home from './Components/Home';
+import About from './Components/About';
+import Navbar from './Components/Navbar';
 
 //import react router
 import {
@@ -15,9 +16,11 @@ import {
 function App() {
   return (<>
   <Router>
+    <Navbar/>
     <Routes>
-      <Route exact path="/" element={<Header/>}/>
-      <Route exact path="/content" element={<Content/>}/>
+      <Route exact path="/" element={<Home/>}/>
+      <Route exact path="/about" element={<About/>}/>
+      <Route exact path="/Navbar" element={<Navbar/>}/>
     </Routes>
     </Router>
     </>
