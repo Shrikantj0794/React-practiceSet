@@ -1,8 +1,9 @@
 import React from 'react'
 
-const About = () => {
+const About = (props) => {
   return (
     <>
+        <h1 style={{color: 'red'}}>HI wellcome to {props.name} page</h1>
         <section class="about-section">
             <h2>Our Story</h2>
             <p>Welcome to [Your Business Name]! We started our journey in [year] with a vision to [briefly describe your mission or purpose]. Since then, we've been committed to [mention core values or principles].</p>
@@ -21,6 +22,7 @@ const About = () => {
                 <p>Creative Director</p>
             </div>
         </section>
+
     </>
   )
 }

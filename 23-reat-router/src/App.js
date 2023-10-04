@@ -18,13 +18,12 @@ function App() {
   <Router>
     <Navbar/>
     <Routes>
-      <Route exact path="/" element={<Home/>}/>
-      <Route exact path="/about" element={<About/>}/>
+      <Route exact path="/" element={<Home name='Home'/>}/> {/* add props name*/}
+      <Route exact path="/about" element={<About name='About'/>}/>
       <Route exact path="/Navbar" element={<Navbar/>}/>
     </Routes>
     </Router>
     </>
   );
 }
-
 export default App;
