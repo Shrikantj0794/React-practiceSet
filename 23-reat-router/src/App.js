@@ -22,7 +22,7 @@ function App() {
       <Route exact path="/" element={<Home name='Home'/>}/> {/* add props name*/}
       <Route exact path="/about" element={<About name='About'/>}/>
       <Route exact path="/Navbar" element={<Navbar/>}/>
-      <Route exact path="/User/:fname" element={<User/>}/>
+      <Route exact path="/User/:fname/:lname" element={<User/>}/>
     </Routes>
     </Router>
     </>
