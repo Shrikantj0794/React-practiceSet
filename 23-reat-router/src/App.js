@@ -6,6 +6,7 @@ import About from './Components/About';
 import Navbar from './Components/Navbar';
 import User from './Components/User';
 import Search from './Components/Search';
+import Error from './Components/Error';
 
 //import react router
 import {
@@ -25,6 +26,7 @@ function App() {
       <Route exact path="/Navbar" element={<Navbar/>}/>
       <Route exact path="/User/:fname/:lname" element={<User/>}/>
       <Route exact path="/Search" element={<Search/>}/>
+      <Route exact path='*' element={<Error/>}/> {/* add path= '*' */}
     </Routes>
     </Router>
     </>
