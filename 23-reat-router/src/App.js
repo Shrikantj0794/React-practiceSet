@@ -5,6 +5,7 @@ import Home from './Components/Home';
 import About from './Components/About';
 import Navbar from './Components/Navbar';
 import User from './Components/User';
+import Search from './Components/Search';
 
 //import react router
 import {
@@ -23,6 +24,7 @@ function App() {
       <Route exact path="/about" element={<About name='About'/>}/>
       <Route exact path="/Navbar" element={<Navbar/>}/>
       <Route exact path="/User/:fname/:lname" element={<User/>}/>
+      <Route exact path="/Search" element={<Search/>}/>
     </Routes>
     </Router>
     </>
