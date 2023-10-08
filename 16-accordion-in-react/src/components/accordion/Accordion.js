@@ -13,7 +13,7 @@ const Accordion = () => {
       <h1>React Interview Q</h1>
     {
       data.map((CurElement)=>{
-        const {id, Question, answer} = CurElement
+        const {id} = CurElement
         return <MyAccordion key={id} {...CurElement}/>  // in map methode must pass the unique key 
       })
     }
