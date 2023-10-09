@@ -21,23 +21,11 @@ const Navbar = () => {
         <li className="nav-item">
           <Link className="nav-link" activeClassname='page_active' to="/contact">Contact</Link>
         </li>
-
-        <li className="nav-item dropdown">
-          <Link className="nav-link dropdown-toggle" activeClassname='page_active' to="/projects" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Projects
-          </Link>
-          <ul className="dropdown-menu">
-
-          <li><Link className="dropdown-item" to="/react">React</Link></li>
-            <li><Link className="dropdown-item" to="/javascript">JavaScript</Link></li>
-            <li><Link className="dropdown-item" to="/HtmlCss">HTML/CSS</Link></li>
-            </ul>
+        <li className="nav-item">
+          <Link className="nav-link" activeClassname='page_active' to="/project">Project</Link>
         </li>
+
       </ul>
-      <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
