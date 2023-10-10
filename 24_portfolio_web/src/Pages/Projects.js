@@ -1,5 +1,6 @@
 import React from 'react';
-import pimg_1 from '../Imeges/projectimg/project-1.jpg'
+import Card from '../Common/Card';
+
 const Projects = () => {
   return (
     <>
@@ -19,14 +20,7 @@ const Projects = () => {
             </div>
             <div className="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
                 <div className="col-lg-4 col-md-6 portfolio-item first">
-                <div class="card" style = {{'width': '17rem'}}>
-                  <img src={pimg_1} class="card-img-top" alt="project_1"/>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="/" class="btn btn-primary">Go somewhere</a>
-                </div>
-                </div>
+                  <Card/>
                 </div>
             </div>
           </div>
