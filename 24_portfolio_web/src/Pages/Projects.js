@@ -1,7 +1,21 @@
 import React from 'react';
 import Card from '../Common/Card';
+import Project_data from '../Data/Proect_data';
+
 
 const Projects = () => {
+
+  function showCard (value){
+    return(
+      <Card
+        key={value.id}
+        imgsrc={value.imgsrc}
+        title={value.title}
+        description={value.description}
+        visit={value.visit}
+      />
+    )
+  }
   return (
     <>
         <div className="container-xxl py-6 pt-5" id="project">
@@ -20,7 +34,7 @@ const Projects = () => {
             </div>
             <div className="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
                 <div className="col-lg-4 col-md-6 portfolio-item first">
-                  <Card/>
+                      { Project_data.map(showCard)}
                 </div>
             </div>
           </div>

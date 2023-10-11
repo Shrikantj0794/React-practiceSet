@@ -1,14 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-const Card = () => {
+
+const Card = (props) => {
   return (
     <>
       <div class="card" style = {{'width': '17rem'}}>
-                  <img src={pimg_1} class="card-img-top" alt="project_1"/>
+                  <img src={props.imgsrc} class="card-img-top" alt="project_1"/>
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="/" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">{props.title}</h5>
+                  <p class="card-text">{props.description}</p>
+                  <a href={props.visit} class="btn btn-primary">Go somewhere</a>
                 </div>
                 </div> 
     </>
