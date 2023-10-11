@@ -1,6 +1,6 @@
 import React from 'react'
-import Common from '../Common/Common'
-import imglink from '../Imeges/img3.png'
+import Common from '../common_data/Common'
+import imglink from '../images/img3.png'
 
 
 const About = () => {

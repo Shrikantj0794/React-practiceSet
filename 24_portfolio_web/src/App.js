@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from './Navbar';
-import Home from './Pages/Home';
-import Projects from './Pages/Projects';
-import Contact from './Pages/Contact';
-import About from './Pages/About';
+import Home from './main_pages/Home';
+import Projects from './main_pages/Projects';
+import Contact from './main_pages/Contact';
+import About from './main_pages/About';
 import { Navigate } from 'react-router-dom';
 
 

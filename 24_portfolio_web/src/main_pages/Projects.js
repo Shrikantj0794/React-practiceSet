@@ -1,6 +1,6 @@
 import React from 'react';
-import Card from '../Common/Card';
-import Project_data from '../Data/Proect_data';
+import Card from '../common_data/Card';
+import Project_data from '../api/Proect_data';
 
 
 const Projects = () => {
@@ -26,19 +26,24 @@ const Projects = () => {
                 </div>
                 <div className="col-lg-6 text-lg-end">
                     <ul className="list-inline mx-n3 mb-0" id="portfolio-flters">
-                        <li className="mx-3 active" data-filter="*">HTML/CSS</li>
+                        <li className="mx-3 " data-filter="*">Html/Css</li>
                         <li className="mx-3" data-filter=".first">JavaScript</li>
                         <li className="mx-3" data-filter=".second">Reactjs</li>
                     </ul>
                 </div>
             </div>
-            <div className="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
-                <div className="col-lg-4 col-md-6 portfolio-item first">
-                      { Project_data.map(showCard)}
+            <div className='container-fluid mb-5'>
+              <div className="row">
+                <div className="col-10 mx-auto">
+                  <div className="row">
+                    { Project_data.map(showCard)}
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
           </div>
-        </div>
+        
     </>
   )
 }

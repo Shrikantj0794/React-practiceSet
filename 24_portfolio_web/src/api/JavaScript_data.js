@@ -1,10 +1,10 @@
-const Project_data = [
+const JavaScript_data = [
     {
         id:'1',
-        imgsrc:'../Imeges/projectimg/project-1.jpg',
+        imgsrc:'images/javaScript/project_1.png',
         title:'Ecommerce web',
         description: 'Some quick example text to build on the card title and make up the bulk of the card.',
-        visit: 'https://raisoniboys.000webhostapp.com/'
+        visit: 'https://github.com/Shrikantj0794/30_Days-30_jsProjects/tree/main/Weather%20App'
     },
     {
         id:'',
@@ -44,4 +44,4 @@ const Project_data = [
 ]
 
 
-export default Project_data
+export default JavaScript_data

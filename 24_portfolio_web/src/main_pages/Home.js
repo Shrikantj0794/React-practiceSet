@@ -1,6 +1,6 @@
 import React from 'react'
-import Common from '../Common/Common'
-import imglink from '../Imeges/img2.png'
+import Common from '../common_data/Common'
+import imglink from '../images/img2.png'
 import Projects from './Projects'
 
 const Home = () => {
