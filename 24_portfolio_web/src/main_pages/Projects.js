@@ -10,7 +10,6 @@ import Reactjs from '../projects_pages/Reactjs';
 const Projects = () => {
   return (
     <>
-     
       <AllProjects/>
       <HtmlCss/>
       <JavaScript/>
