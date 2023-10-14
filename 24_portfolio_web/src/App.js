@@ -6,7 +6,6 @@ import Contact from './main_pages/Contact';
 import About from './main_pages/About';
 import { Navigate } from 'react-router-dom';
 
-
 //import react router
 import {
   BrowserRouter as Router,
