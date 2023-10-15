@@ -16,7 +16,6 @@ const filterCard = (cateCard)=>{
   setitem(updatedCard)
 }
 
-  
      return (
     <>
         <div className="container-xxl py-6 pt-5" id="project">
