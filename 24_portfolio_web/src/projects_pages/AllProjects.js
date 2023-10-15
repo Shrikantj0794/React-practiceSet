@@ -1,22 +1,11 @@
 import React from 'react';
 import Card from '../common_data/Card';
 import Project_data from '../api/Project_data';
-import HtmlCss from '../projects_pages/HtmlCss';
-import javaScript from './JavaScript';
-import Reactjs from './Reactjs'
+import { Link } from 'react-router-dom';
 
 
 const AllProjects = () => {
 
-const showpage1 = ()=>{
- <HtmlCss/>
-}
-const showpage2 = ()=>{
-  <javaScript/>
- }
- const showpage3 = ()=>{
-  <Reactjs/>
- }
 
   function showCard (value){
     return(
@@ -41,13 +30,15 @@ const showpage2 = ()=>{
                  
                     <ul className="list-inline mx-n3 mb-0" id="portfolio-flters">
                       <li className="mx-3">
-                        <button onClick={showpage1} className="mx-3">Html/Css</button>
+                        <Link to='/HtmlCss' className="mx-3">Html/Css</Link>
                         </li>
                         <li className="mx-3 ">
-                        <button onClick={showpage2} className="mx-3">JavaScript</button>
+                        <Link to='/JavaScript' className="mx-3">JavaScript</Link>
+                        
                         </li>
                         <li className="mx-3 ">
-                        <button onClick={showpage3} className="mx-3">Reactjs</button>
+                        <Link to='/Reactjs' className="mx-3">Reactjs</Link>
+                        
                         </li>
                     </ul>
                   

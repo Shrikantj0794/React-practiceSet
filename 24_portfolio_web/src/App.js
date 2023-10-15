@@ -21,7 +21,7 @@ function App() {
       <Navbar/>
     <Routes>
       <Route exact path="/" element={<Home/>}/> {/* add props name*/}
-      <Route exact path="/Project" element={<Projects/>}/>
+      <Route exact path="/projects" element={<Projects/>}/>
       <Route exact path="/Contact" element={<Contact/>}/>
       <Route exact path="/About" element={<About/>}/>
       <Route path='*' element={<Navigate to = '/'/>}/>
