@@ -25,7 +25,7 @@ const Project_data = [
     },
     {
         id:'4',
-        imgsrc:'',
+        imgsrc:'images/javaScript/project_2.png',
         title:'Age Calculator',
         description:'',
         visit:'https://github.com/Shrikantj0794/30_Days-30_jsProjects/tree/main/Age%20Calculator',
@@ -33,7 +33,7 @@ const Project_data = [
     },
     {
         id:'5',
-        imgsrc:'',
+        imgsrc:'images/javaScript/project_3.png',
         title:'Generate-a-Random-Password',
         description:'',
         visit:'https://github.com/Shrikantj0794/30_Days-30_jsProjects/tree/main/Generate-a-Random-Password',
@@ -41,7 +41,7 @@ const Project_data = [
     },
     {
         id:'6',
-        imgsrc:'',
+        imgsrc:'images/javaScript/project_4.png',
         title:'Music Player',
         description:'',
         visit:'https://github.com/Shrikantj0794/30_Days-30_jsProjects/tree/main/Music%20Player',
@@ -49,7 +49,7 @@ const Project_data = [
     },
     {
         id:'7',
-        imgsrc:'',
+        imgsrc:'images/javaScript/project_5.png',
         title:'Notes App',
         description:'',
         visit:'https://github.com/Shrikantj0794/30_Days-30_jsProjects/tree/main/Notes%20App',
@@ -57,7 +57,7 @@ const Project_data = [
     },
     {
         id:'8',
-        imgsrc:'',
+        imgsrc:'images/javaScript/project_6.png',
         title:'QR Code Generator',
         description:'',
         visit:'https://github.com/Shrikantj0794/30_Days-30_jsProjects/tree/main/QR%20Code%20Generator',
@@ -65,7 +65,7 @@ const Project_data = [
     },
     {
         id:'9',
-        imgsrc:'',
+        imgsrc:'images/javaScript/project_7.png',
         title:'Quiz App',
         description:'',
         visit:'https://github.com/Shrikantj0794/30_Days-30_jsProjects/tree/main/Quiz%20App',
@@ -73,7 +73,7 @@ const Project_data = [
     },
     {
         id:'10',
-        imgsrc:'',
+        imgsrc:'images/javaScript/project_8.png',
         title:'Quote Generator',
         description:'',
         visit:'https://github.com/Shrikantj0794/30_Days-30_jsProjects/tree/main/Quote%20Generator',
@@ -81,7 +81,7 @@ const Project_data = [
     },
     {
         id:'11',
-        imgsrc:'',
+        imgsrc:'images/javaScript/project_9.png',
         title:'To-Do List',
         description:'',
         visit:'https://github.com/Shrikantj0794/30_Days-30_jsProjects/tree/main/To-Do%20List',
@@ -89,8 +89,8 @@ const Project_data = [
     },
     {
         id:'12',
-        imgsrc:'Toast Notification or Snack Bar',
-        title:'',
+        imgsrc:'images/javaScript/project_10.png',
+        title:'Toast Notification or Snack Bar',
         description:'',
         visit:'https://github.com/Shrikantj0794/30_Days-30_jsProjects/tree/main/Toast%20Notification%20or%20Snack%20Bar',
         type: 'javascript'
