@@ -1,10 +1,28 @@
 import React from 'react'
+import { useState } from 'react'
 
 const Contact = () => {
+const [data, setdata] = useState({
+  name: '',
+  phoneNo: '',
+  email: '',
+  msg: ''
+});
 
-  
-  const formsubmit = ()=>{
 
+const InputEvent =(event)=>{
+  const {name, value}= event.target;
+
+  setdata((PreValue)=>{
+    return{
+      ...PreValue,
+      [name] : value
+    }
+  })
+}
+  const formsubmit = (e)=>{
+    e.preventDefault();
+    alert('form submitted successfully')
   }
 
   return (
@@ -23,7 +41,7 @@ const Contact = () => {
               class="form-control" 
               id="exampleFormControlInput1"
               name='name'
-              value={}
+              value={data.name}
               onChange={InputEvent} 
               placeholder="Enter your name" 
               required/>
@@ -35,7 +53,7 @@ const Contact = () => {
               class="form-control" 
               id="exampleFormControlInput1"
               name='phoneNo'
-              value={}
+              value={data.phoneNo}
               onChange={InputEvent} 
               placeholder="Mobile No" 
               required/>
@@ -47,7 +65,7 @@ const Contact = () => {
               class="form-control" 
               id="exampleFormControlInput1"
               name='email'
-              value={}
+              value={data.email}
               onChange={InputEvent} 
               placeholder="example@gmail.com" 
               required/>
@@ -58,7 +76,7 @@ const Contact = () => {
               class="form-control" 
               id="exampleFormControlTextarea1"
               name='msg'
-              value={}
+              value={data.msg}
               onChange={InputEvent} 
               rows="3">
               </textarea>
