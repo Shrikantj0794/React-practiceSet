@@ -4,6 +4,7 @@ import Home from './main_pages/Home';
 import Projects from './main_pages/Projects';
 import Contact from './main_pages/Contact';
 import About from './main_pages/About';
+import Footer from './Footer'
 import { Navigate } from 'react-router-dom';
 
 //import react router
@@ -25,6 +26,7 @@ function App() {
       <Route exact path="/About" element={<About/>}/>
       <Route path='*' element={<Navigate to = '/'/>}/>
     </Routes>
+    <Footer/>
     </Router>
     </>
   );

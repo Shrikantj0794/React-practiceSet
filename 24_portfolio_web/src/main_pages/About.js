@@ -1,7 +1,6 @@
 import React from 'react'
 import Common from '../common_data/Common'
-import imglink from '../images/img3.png'
-
+import imglink2 from '../images/fimage1.png'
 
 const About = () => {
   return (
@@ -10,7 +9,7 @@ const About = () => {
     heading='Meet the Creative Mind Behind the Portfolio: Exploring Shrikant Journey'
     visit='/contact'
     btnText='Contact Me'
-    src={imglink}
+    src={imglink2}
     />
     </div>
   )
