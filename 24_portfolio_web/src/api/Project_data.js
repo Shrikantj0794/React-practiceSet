@@ -16,11 +16,19 @@ const Project_data = [
         type:'html'
     },
     {
-        id:'3',
-        imgsrc:'images/javaScript/project_1.png',
-        title:'Weather App',
-        description: 'Experience weather like never before with our Weather App, powered by live data fetched from external APIs, User-friendly interface. ',
-        visit: 'https://github.com/Shrikantj0794/30_Days-30_jsProjects/tree/main/Weather%20App',
+        id:'13',
+        imgsrc:'images/reactjs/project_1.png',
+        title:'Text Utils',
+        description: 'Easily format and style your text—capitalize, highlight, or no of words. React.js ensures a dynamic and user-friendly text manipulation experience,',
+        visit: 'https://shrikantj0794.github.io/react-textutils/',
+        type:'reactjs'
+    },
+    {
+        id:'8',
+        imgsrc:'images/javaScript/project_6.png',
+        title:'QR Code Generator',
+        description:'Create QR codes for URLs, contact information, and more, seamlessly and in real-time.',
+        visit:'https://github.com/Shrikantj0794/30_Days-30_jsProjects/tree/main/QR%20Code%20Generator',
         type: 'javascript'
     },
     {
@@ -40,6 +48,14 @@ const Project_data = [
         type: 'javascript'
     },
     {
+        id:'3',
+        imgsrc:'images/javaScript/project_1.png',
+        title:'Weather App',
+        description: 'Experience weather like never before with our Weather App, powered by live data fetched from external APIs, User-friendly interface. ',
+        visit: 'https://github.com/Shrikantj0794/30_Days-30_jsProjects/tree/main/Weather%20App',
+        type: 'javascript'
+    },
+    {
         id:'6',
         imgsrc:'images/javaScript/project_4.png',
         title:'Music Player',
@@ -53,14 +69,6 @@ const Project_data = [
         title:'Notes App',
         description:'Store your thoughts and ideas with our Note App, empowered by JavaScript. Write, edit, and delete your notes, ensuring your ideas are always at your fingertips.',
         visit:'https://github.com/Shrikantj0794/30_Days-30_jsProjects/tree/main/Notes%20App',
-        type: 'javascript'
-    },
-    {
-        id:'8',
-        imgsrc:'images/javaScript/project_6.png',
-        title:'QR Code Generator',
-        description:'Create QR codes for URLs, contact information, and more, seamlessly and in real-time.',
-        visit:'https://github.com/Shrikantj0794/30_Days-30_jsProjects/tree/main/QR%20Code%20Generator',
         type: 'javascript'
     },
     {
@@ -94,14 +102,6 @@ const Project_data = [
         description:'Never miss a beat with our Toast Notification system, powered by JavaScript. ',
         visit:'https://github.com/Shrikantj0794/30_Days-30_jsProjects/tree/main/Toast%20Notification%20or%20Snack%20Bar',
         type: 'javascript'
-    },
-    {
-        id:'13',
-        imgsrc:'images/reactjs/project_1.png',
-        title:'Text Utils',
-        description: 'Easily format and style your text—capitalize, highlight, or no of words. React.js ensures a dynamic and user-friendly text manipulation experience,',
-        visit: 'https://shrikantj0794.github.io/react-textutils/',
-        type:'reactjs'
     },
     {
         id:'14',

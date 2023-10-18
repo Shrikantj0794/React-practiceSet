@@ -10,7 +10,7 @@ const Common = (props) => {
       <div className="row">
         <div className="col-10 mx-auto">
           <div className="row">
-          <div className="col-md-6 pt-5 pt-lg-0 order-2 mt-6 order-lg-1 d-flex align-content-center flex-column">
+          <div className="col-md-6 pt-6 pt-lg-0 order-2 mt-5 order-lg-1 d-flex align-content-center flex-column">
             <h1>Hi, I'am</h1>
             <h1><strong className='brand-name'>Shrikant</strong></h1>
             <h4 className='my-3 blockquote-footer'>Web Developer</h4>
