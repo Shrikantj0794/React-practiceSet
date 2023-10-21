@@ -1,6 +1,6 @@
 import React from 'react'
 import Common from '../common_data/Common'
-import imglink1 from '../images/fimage2.png'
+import imglink1 from '../Home-Img/fimage2.png'
 
 const Home = () => {
   return (

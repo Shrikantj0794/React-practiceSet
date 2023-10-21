@@ -37,12 +37,12 @@ const filterCard = (cateCard)=>{
                 <div className="col-10 mx-auto">
                   <div className="row">
                     { item.map((showCard)=>{
-                        const{id, imgsrc, title, description, visit, type} = showCard;
+                        const{id,src, title, description, visit, type} = showCard;
 
                         return(
                               <Card
                                 key={id}
-                                imgsrc={imgsrc}
+                                imgsrc={src}
                                 title={title}
                                 description={description}
                                 visit={visit}
