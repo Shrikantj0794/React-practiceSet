@@ -1,4 +1,3 @@
-
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
@@ -17,14 +16,22 @@ const passwordSchema = z.string().min(6, "Password must be at least 6 characters
 const formSchema =z.object({
         email: z.string().email("Invalid email address"),
         password: passwordSchema,
+        confirmPassword: passwordSchema
+        // confirmPassword: passwordSchema.refine((val, ctx) => {
+        //   if (ctx.parent.password !== val) {
+        //     return false;
+        //   }
+        //   return true;
+        // }, "Passwords must match"),
       });
 
-function LoginForm() {
+function RegistrationForm() {
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
           email: "",
           password: "",
+          confirmPassword: ""
         },
       })
 
@@ -33,10 +40,12 @@ function LoginForm() {
       }
 
   return (
+    <>
+    
     <main>
         <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <h1>login Form</h1>
+      <h1>Registration Form</h1>
         <FormField
           control={form.control}
           name="email"
@@ -65,11 +74,26 @@ function LoginForm() {
             </FormItem>
           )}
         />
+        <FormField
+          control={form.control}
+          name="confirmPassword"
+          
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Confirm Password</FormLabel>
+              <FormControl>
+                <Input placeholder="Confirm Password " {...field} type="password"/>
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
         <Button type="submit" className="w-full">Submit</Button>
       </form>
     </Form>
     </main>
+    </>
   )
 }
 
-export default LoginForm
+export default RegistrationForm

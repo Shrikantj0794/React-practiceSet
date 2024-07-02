@@ -5,7 +5,10 @@ import {
   CardHeader,
   CardTitle,
 } from "../src/shadcn/components/ui/card"
-import LoginForm from './shadcn/components/molecules/loginform';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Login from './shadcn/components/molecules/loginform'
+import Register from './shadcn/components/molecules/registration'
+import Home from '../src/main_pages/Home'
 
 const App: React.FC = () => {
 
@@ -13,11 +16,16 @@ const App: React.FC = () => {
     <main className='flex flex-col h-screen justify-center items-center'>
       <Card className='w-1/3'>
         <CardHeader>
-          <CardTitle>Hello User</CardTitle>
           <CardDescription />
         </CardHeader>
         <CardContent>
-          <LoginForm></LoginForm>
+        <BrowserRouter>
+      <Routes>
+        <Route index Component={Home}></Route>
+        <Route path='/login' Component={Login}></Route>
+        <Route path='/register' Component={Register}></Route>
+      </Routes>
+      </BrowserRouter>
         </CardContent>
       </Card>
     </main>
