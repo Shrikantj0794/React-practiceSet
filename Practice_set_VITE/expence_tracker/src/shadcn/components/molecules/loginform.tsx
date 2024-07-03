@@ -12,6 +12,9 @@ import {
   FormMessage,
 } from "../ui/form"
 import { Input } from "../ui/input"
+import { auth} from "../../lib/firebase"; 
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { useNavigate } from "react-router-dom"
 
 const passwordSchema = z.string().min(6, "Password must be at least 6 characters long"); 
 const formSchema =z.object({
@@ -20,6 +23,7 @@ const formSchema =z.object({
       });
 
 function LoginForm() {
+  const navigate = useNavigate();
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -29,9 +33,18 @@ function LoginForm() {
       })
 
       async function onSubmit(values: z.infer<typeof formSchema>) {
-         await console.log(values)
+        signInWithEmailAndPassword(auth, values.email, values.password)
+        .then((userCredential) => {
+        const user = userCredential.user;
+        console.log(user)
+        navigate('/')
+        })
+        .catch((error) => {
+        const errorMessage = error.message;
+        console.log(errorMessage)
+        navigate('/register')
+        })
       }
-
   return (
     <main>
         <Form {...form}>

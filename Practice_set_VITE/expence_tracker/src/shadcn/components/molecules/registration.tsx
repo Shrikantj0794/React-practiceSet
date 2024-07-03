@@ -11,21 +11,20 @@ import {
   FormMessage,
 } from "../ui/form"
 import { Input } from "../ui/input"
+// Import the initialized Firebase app
+import { auth} from "../../lib/firebase"; 
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 const passwordSchema = z.string().min(6, "Password must be at least 6 characters long"); 
 const formSchema =z.object({
         email: z.string().email("Invalid email address"),
         password: passwordSchema,
-        confirmPassword: passwordSchema
-        // confirmPassword: passwordSchema.refine((val, ctx) => {
-        //   if (ctx.parent.password !== val) {
-        //     return false;
-        //   }
-        //   return true;
-        // }, "Passwords must match"),
+        confirmPassword: z.string()
       });
 
 function RegistrationForm() {
+  const navigate = useNavigate();
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -36,7 +35,9 @@ function RegistrationForm() {
       })
 
       async function onSubmit(values: z.infer<typeof formSchema>) {
-         await console.log(values)
+         await createUserWithEmailAndPassword(auth, values.email, values.password);
+         navigate("/login");
+         console.log("user created")
       }
 
   return (
